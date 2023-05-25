@@ -762,6 +762,8 @@ letter-spacing: 0.02em;
  
  padding-left: 24px;
  padding-right: 24px;
+ padding-top: 72px;
+ padding-bottom:24px;
  }
 
 /*--Описание кнопки закрытия модального окна--*/
@@ -803,21 +805,29 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 
 /*--Описание формы модального окна--*/
-/*--.modal-window-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}--*/
-
+.modal-window-form 
+{
+/*--display: flex;
+flex-direction: column;
+align-items: center;--*/
+margin-bottom: 8px;
+}
 
 /*--Описание <label> модального окна--*/
 .modal-window-label
-{ margin-bottom: 8px;}
+{ margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8E8F99;
+  display: block;
+  margin-bottom: 4px;
+}
 
 /*--Надпись над формами--*/
 .modal-window-text 
 {
-padding-top: 72px;
 margin-bottom: 16px;
 text-align: center;
 font-weight: 500;
@@ -827,18 +837,6 @@ letter-spacing: 0.02em;
 color: #2E2F42;
 }
 
-/*--Описываем текст внутри формы--*/
-.modal-window-form-text
-{
- display: block;   
- font-weight: 400;
- font-size: 12px;
- line-height: 1.17;
-letter-spacing: 0.01em;
-color: #8E8F99;
-margin-bottom: 4px;
-margin-top: 8px;
-}
 
 /*--Описание контейнера для input+svg--*/
 .modal-win-form-cont
@@ -854,6 +852,7 @@ height: 40px;
 padding-left: 38px;
 border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius:4px;
+background-color: transparent;
 transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -868,11 +867,11 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 {
 position: absolute;
 left: 16px;
-top: 8px;
+/*--top: 8px;--*/
 fill: #2E2F42;
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-/*--top: 50%;--*/
-/*--transform: translateY(50%);--*/
+top: 50%;
+transform: translateY(-50%);
 }
 
 /*--Меняем цвет заливки иконок формы при ховере и фокусе--*/
