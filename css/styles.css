@@ -804,6 +804,20 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 {fill: #fff;}
 
 
+
+/*----------ДЗ№6-------------*/
+
+/*--Надпись над формами--*/
+.modal-window-text {
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
 /*--Описание формы модального окна--*/
 .modal-window-form 
 {
@@ -825,24 +839,11 @@ margin-bottom: 8px;
   margin-bottom: 4px;
 }
 
-/*--Надпись над формами--*/
-.modal-window-text 
-{
-margin-bottom: 16px;
-text-align: center;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #2E2F42;
-}
-
-
 /*--Описание контейнера для input+svg--*/
-.modal-win-form-cont
-{ display: block;
-  position: relative; }
-
+.modal-win-form-cont {
+    display: block;
+    position: relative;
+}
 
 /*--Описание <input>--*/
 .modal-window-input
@@ -857,9 +858,9 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*--Меняем цвет рамки input при ховере и фокусе--*/
-.modal-window-input:hover,
-.modal-window-input:focus {
-    border: 1px solid rgba(77, 90, 229, 1);
+.modal-window-input:focus > .icon-form {
+fill: #4D5AE5;
+   /*-- border: 1px solid rgba(77, 90, 229, 1);--*/
 }
 
 /*--Описываем вложенные иконки в формы--*/
@@ -877,7 +878,7 @@ transform: translateY(-50%);
 /*--Меняем цвет заливки иконок формы при ховере и фокусе--*/
 .modal-win-form-cont:hover > .icon-form,
 .modal-win-form-cont:hover > .icon-form
-{ fill: rgba(77, 90, 229, 1);}
+{ /*--fill: #4D5AE5;--*/}
 
 /*--Задаем размеры поля textarea--*/
 textarea
