@@ -672,6 +672,7 @@ margin-right: 24px;
 /*--Описание текста над формой--*/
 .text-form
 {
+display: block;
 color: var(--footer-secondary-text-color);
 font-weight: 500;
 font-size: 16px;
@@ -841,7 +842,8 @@ margin-top: 8px;
 
 /*--Описание контейнера для input+svg--*/
 .modal-win-form-cont
-{ position: relative; }
+{ display: block;
+  position: relative; }
 
 
 /*--Описание <input>--*/
@@ -952,7 +954,7 @@ margin-top: 8px;}
 /*--Описываем текст checkbox--*/
 .modal-window-form-text-check 
 {
-display: inline;
+/*--display: inline;--*/
 font-weight: 400;
 font-size: 12px;
 line-height: 1.17;
