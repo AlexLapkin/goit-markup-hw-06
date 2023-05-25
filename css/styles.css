@@ -647,6 +647,82 @@ margin-bottom: 16px;
  .icon-sl-foot {
   fill: #f4f4fd; }
 
+
+/*--Контейнер с формой--*/
+.cont-subscribe
+{margin-left: 80px;} /*--Отодвигаем на 80px--*/
+
+/*--Описание контейнера для формы Subscribe--*/
+.form-subscribe
+{display: flex;
+/*--flex-direction: row;--*/
+/*--position: relative;--*/
+/*--outline: 1px solid red;--*/
+align-items: flex-end; /*--Прижимаем элементы к нижней границе--*/
+}
+
+/*--Описание <label>, в которую вложен "p + input"--*/
+.label-subscribe {
+/*--display: flex; /*
+/*flex-direction: column;--*/
+margin-right: 24px;
+/*--outline: 1px solid green;--*/
+}
+
+/*--Описание текста над формой--*/
+.text-form
+{
+color: var(--footer-secondary-text-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+margin-bottom: 16px;
+}
+
+/*--Описание текста внутри формы--*/
+.cont-subscribe input
+{
+    width: 264px;
+    height: 40px;
+    background-color: var(--footer-background-color);
+    border: 1px solid white;
+    border-radius: 4px;
+    padding-left: 16px;
+    
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+}
+
+/*--Описание кнопки формы Subscribe--*/
+.form-btn
+{width: 165px;
+ height: 40px;
+ border-radius: 4px;
+ display: flex;
+ align-items: center;
+ justify-content: space-around ; 
+
+ /*--position: absolute--*/;
+ /*--right: 0;--*/
+ /*--bottom: 0;--*/
+ /*--outline: 1px solid black;--*/
+ background-color: #4D5AE5;
+ color: #fff;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
+
+/*--Класс описания иконки кнопки Subscribe--*/
+.icon-subscribe-foot {
+    fill: #f4f4fd;
+    }
+
 /*--Описание бекдропа--*/
 .backdrop
 {
@@ -669,7 +745,7 @@ margin-bottom: 16px;
 }
 
 /*--Описание модального окна--*/
-.modal
+.modal-window
 {width: 408px;
  min-height: 576px;
  background-color: #FCFCFC;
@@ -682,7 +758,10 @@ margin-bottom: 16px;
         0px 2px 1px rgba(0, 0, 0, 0.2);
  border-radius: 4px;       
  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+ 
+ padding-left: 24px;
+ padding-right: 24px;
+ }
 
 /*--Описание кнопки закрытия модального окна--*/
 .modal-close-btn
@@ -720,3 +799,164 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 .modal-close-btn:hover .modal-close-btn-icon,
 .modal-close-btn:focus .modal-close-btn-icon
 {fill: #fff;}
+
+
+/*--Описание формы модального окна--*/
+/*--.modal-window-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}--*/
+
+
+/*--Описание <label> модального окна--*/
+.modal-window-label
+{ margin-bottom: 8px;}
+
+/*--Надпись над формами--*/
+.modal-window-text 
+{
+padding-top: 72px;
+margin-bottom: 16px;
+text-align: center;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #2E2F42;
+}
+
+/*--Описываем текст внутри формы--*/
+.modal-window-form-text
+{
+ display: block;   
+ font-weight: 400;
+ font-size: 12px;
+ line-height: 1.17;
+letter-spacing: 0.01em;
+color: #8E8F99;
+margin-bottom: 4px;
+margin-top: 8px;
+}
+
+/*--Описание контейнера для input+svg--*/
+.modal-win-form-cont
+{ position: relative; }
+
+
+/*--Описание <input>--*/
+.modal-window-input
+{
+width: 100%;
+height: 40px;
+padding-left: 38px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius:4px;
+transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*--Меняем цвет рамки input при ховере и фокусе--*/
+.modal-window-input:hover,
+.modal-window-input:focus {
+    border: 1px solid rgba(77, 90, 229, 1);
+}
+
+/*--Описываем вложенные иконки в формы--*/
+.icon-form
+{
+position: absolute;
+left: 16px;
+top: 8px;
+fill: #2E2F42;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+/*--top: 50%;--*/
+/*--transform: translateY(50%);--*/
+}
+
+/*--Меняем цвет заливки иконок формы при ховере и фокусе--*/
+.modal-win-form-cont:hover > .icon-form,
+.modal-win-form-cont:hover > .icon-form
+{ fill: rgba(77, 90, 229, 1);}
+
+/*--Задаем размеры поля textarea--*/
+textarea
+{
+width: 100%;
+height: 120px;
+resize: none;
+padding: 8px 16px;   
+}
+
+/*--Описание формы textarea Comment--*/
+.modal-window-textarea
+{
+ border: 1px solid rgba(46, 47, 66, 0.4);
+ border-radius: 4px;
+
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+color: #8E8F99;
+transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*--Меняем цвет рамки textarea при ховере и фокусе--*/
+.modal-window-textarea:hover,
+.modal-window-textarea:focus {
+    border: 1px solid rgba(77, 90, 229, 1);
+}
+
+/*--Описываем фейковую иконку checkbox--*/
+.icon-checkbox 
+{
+border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 2px;
+margin-right: 8px;
+}
+
+/*--Описание реального checkbox--*/
+.modal-window-checkbox
+{ appearance: none; /*--Сбрасываем все настройки реальному checkbox--*/
+}
+
+/*--Связываем реальный checkbox с фейковым--*/
+.modal-window-checkbox:checked + .icon-checkbox
+{ background-color: #404BBF; }
+
+
+/*--Кнопка Send модального окнв--*/
+.modal-btn
+{
+ display: block;
+ width: 169px;
+ height: 56px;
+ margin: auto;
+ margin-top: 24px;
+
+background: #4D5AE5;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+}
+
+.modal-window-form-checkbox
+{display: flex;
+margin-top: 8px;}
+
+/*--Описываем текст checkbox--*/
+.modal-window-form-text-check 
+{
+display: inline;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+color: #8E8F99;
+}
+
