@@ -694,7 +694,7 @@ margin-bottom: 16px;
     letter-spacing: 0.04em;
     color: #ffffff;
     background-color: transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*--Описываем поведение <input> при фокусе--*/
@@ -702,7 +702,6 @@ margin-bottom: 16px;
 { 
 outline: transparent; /*--Убираем черную рамку от браузера--*/
 }
-
 
 /*--Описание кнопки формы Subscribe--*/
 .form-btn
@@ -726,8 +725,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*--Меняем кнопку при ховере и фокусе--*/
-.form-btn:hover, .form-btn:focus
-{ background-color: #404BBf; }
+/*--.form-btn:hover, .form-btn:focus
+{ background-color: #404BBf; }--*/
 
 
 /*--Класс описания иконки кнопки Subscribe--*/
